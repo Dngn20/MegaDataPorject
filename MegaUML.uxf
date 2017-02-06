@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>40</y>
+      <w>190</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Title
+--
+Data here
+--
+Construstor 
+Methods</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>30</y>
+      <w>310</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Timer
+--
+
+--
+-clock_t executionTime;
++void startTimer();
++void stopTimer();
++void resetTimer();
++void displayTimerInformation();
++long getExecutionTimeinMircoseconds();
+bg=#3c8b90
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>30</y>
+      <w>390</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>IntNode
+--
+- nodeData:int 
+- nodePointer : IntNode *
+--
+//gets/sets
++ getNodeData() : int
++ getNodePointer() : IntNode *
++ setNodeData(int) value : void
++ setNodePointer(IntNode * next) : void
+
++ IntNode() : constructor
++ IntNode(int value) : init
++ IntNode(int value, IntNode * nextNode) : constructor</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
